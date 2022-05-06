@@ -4,19 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="main.css" />
     <title>Crochet App</title>
 </head>
 
 <body>
-    <div>
+    <div class="count-cont">
         <div>
-            <button id="up-btn" onclick="updateCount(event)">UP</button>
-            <div>number goes here</div>
+            <button class="button is-large is-success is-light" id="dwn-btn" onclick="updateCount(event)"><</button>
+        </div>
+        <div class="numb-cont">
+            <h2 id="stitch-count">0</h2>
         </div>
         <div>
-            <button id="dwn-btn" onclick="updateCount(event)">DOWN</button>
-            <div>number goes here</div>
+            <button class="button is-large is-success is-light" id="up-btn" onclick="updateCount(event)">></button>
         </div>
     </div>
 
