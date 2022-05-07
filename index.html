@@ -10,17 +10,21 @@
 </head>
 
 <body>
-    <div class="count-cont">
-        <div>
-            <button class="button is-large is-success is-light" id="dwn-btn" onclick="updateCount(event)"><</button>
+    <div class="app-cont">
+        <div class="count-cont">
+            <div>
+                <button class="button is-large is-success is-light" id="dwn-btn" onclick="updateCount(event)"><</button>
+            </div>
+            <div class="numb-cont">
+                <h2 id="stitch-count">0</h2>
+            </div>
+            <div>
+                <button class="button is-large is-success is-light" id="up-btn" onclick="updateCount(event)">></button>
+            </div>
         </div>
-        <div class="numb-cont">
-            <h2 id="stitch-count">0</h2>
-        </div>
-        <div>
-            <button class="button is-large is-success is-light" id="up-btn" onclick="updateCount(event)">></button>
-        </div>
+        <button class="button" id="clear-btn">Clear</button>
     </div>
+
 
     <script src="app.js"></script>
 </body>

@@ -11,14 +11,21 @@ body {
   height: 100%;
 }
 
-.count-cont {
+.app-cont {
   border: 1px solid gray;
   background-color: lightgray;
   height: 500px;
   width: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.count-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .numb-cont {
