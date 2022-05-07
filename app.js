@@ -11,7 +11,15 @@ function updateCount(event) {
     displayCount()
   } else {
     count--;
+    if (count < 0) {
+      count = 0;
+    }
     displayCount()
   }
   console.log(count);
+}
+
+function clearCount() {
+  count = 0;
+  displayCount()
 }
